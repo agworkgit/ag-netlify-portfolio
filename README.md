@@ -51,4 +51,4 @@ This project is licensed under the MIT License.
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aae511cf-fb4d-45f7-abd1-690f5439a0c1/deploy-status)](https://app.netlify.com/sites/alex-grigore/deploys)

@@ -1,0 +1,115 @@
+.bi-calendar3, .bi-clock-history, .bi-mortarboard {
+    margin-right: 6px;
+}
+
+.qualification-container {
+    max-width: 768px;
+}
+
+.qualification-tabs {
+   display: flex;
+   justify-content: center;
+   margin-bottom: var(--mb-2); 
+}
+
+.qualification-button {
+    font-size: var(--r-size);
+    font-weight: var(--font-medium);
+    color: var(--text-color);
+    margin: 0 var(--mb-1);
+    cursor: pointer;
+}
+
+.qualification-button:hover {
+    color: var(--title-color);
+}
+
+.qualification-icon {
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-5);
+}
+
+.qualification-active {
+    color: var(--title-color-dark);
+}
+
+.qualification-sections {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+}
+
+.qualification-content {
+    display: none;
+}
+
+.qualification-content-active {
+    display: block;
+}
+
+.qualification-data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification-title {
+    font-size: var(--r-size);
+    font-weight: var(--font-medium);
+}
+
+.qualification-subtitle {
+    display: inline-block;
+    font-size: var(--s-size);
+    color: var(--text-color);
+}
+
+.qualification-calendar {
+    font-size: var(--s-size);
+    color: var(--text-color);
+}
+
+.qualification-rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+}
+
+.qualification-line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-color);
+    transform: translate(6px, -7px);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+    .qualification-container {
+        margin-inline: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .qualification-container {
+        margin-inline: var(--mb-1-5);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .qualification-sections {
+        grid-template-columns: initial;
+    }
+
+    .qualification-button {
+        margin: 0 var(--mb-0-75);
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .qualification-data {
+        gap: 0.5rem;
+    }
+  }

@@ -1,0 +1,201 @@
+.portfolio-container {
+    background-color: var(--body-color);
+    padding-top: 4.75rem;
+}
+
+.project-container {
+    /* padding-top: 6rem; */
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    column-gap: 2.5rem;
+    background-color: var(--body-color) !important;
+    max-width: 968px;
+}
+
+.project-container:last-child {
+    /* margin-bottom: 3rem; */
+    padding-bottom: 1rem;
+}
+
+.project-card {
+    background-color: var(--body-muted-color);
+    border-radius: 1.5rem;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-inline: 1rem;
+}
+
+.project-title {
+    color: var(--text-color);
+    margin-block: var(--mb-1);
+    font-size: var(--xl-size);
+    text-align: center;
+}
+
+.project-section-subtitle {
+    font-size: var(--r-size);
+    text-align: center;
+    margin-bottom: var(--mb-0-5);
+    color: var(--title-color);
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: 0.75rem;
+}
+
+.project-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--s-size);
+    padding-block: 1rem;
+    margin-bottom: var(--mb-1);
+    /* width: 90%; */
+    padding-inline: 3rem;
+    margin-inline: auto;
+}
+
+.project-purpose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: var(--s-size);
+    padding-block: 1rem;
+    margin-bottom: var(--mb-1);
+    padding-inline: 3rem;
+    margin-inline: auto;
+}
+
+.project-image {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-repeat: no-repeat;
+    border-radius: 1.25rem;
+    justify-self: center;
+    margin-block: var(--mb-1);
+}
+
+.project-deployed-button {
+    /* margin-bottom: var(--mb-0-5); */
+    margin-right: var(--mb-1-5);
+}
+
+.project-deployed-button, 
+.project-repo-button {
+    cursor: pointer;
+    width: fit-content;
+    font-size: var(--xs-size);
+    color: var(--body-color);
+    background-color: var(--title-color);
+}
+
+.dep-icon, .rep-icon {
+    margin-right: var(--mb-1);
+}
+
+.link-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tech-stack-tags {
+    background-color: var(--text-color);
+    color: var(--body-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: var(--xs-size);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+    .container {
+        margin-inline: 0;
+        padding-inline: 3rem;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .project-deployed-button, 
+    .project-repo-button {
+    cursor: pointer;
+    width: 47%;
+    font-size: var(--xs-size);
+    justify-content: center;
+}
+  }
+  
+  @media screen and (max-width: 768px) {
+    .project-deployed-button, 
+    .project-repo-button {
+    cursor: pointer;
+    width: 48%;
+    font-size: var(--xs-size);
+    justify-content: center;
+    }
+
+    .project-section-subtitle {
+        font-size: var(--r-size);
+        text-align: left;
+        padding-inline: 1rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .project-subtitle {
+        padding-inline: 0rem;
+    }
+
+    .project-purpose {
+        margin-inline: 0;
+        padding-inline: 0rem;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .project-image {
+        height: auto;
+    }
+
+    .project-deployed-button, 
+    .project-repo-button {
+    cursor: pointer;
+    width: 100%;
+    font-size: var(--xxs-size);
+    justify-content: center;
+    }
+
+    .tech-stack-tags {
+        font-size: var(--xxs-size);
+    }
+
+    .project-purpose {
+        margin-inline: 0;
+        padding-inline: 0rem;
+    }
+
+    .portfolio-container{
+        padding-top: 0rem;
+    }
+
+    .project-container {
+        padding-top: var(--mb-0-5);
+        padding-inline: var(--mb-0-5);
+        grid-template-columns: 1fr;
+        /* align-items: center; */
+        column-gap: 0rem;
+        background-color: var(--body-color) !important;
+    }
+    
+    .project-container:last-child {
+        /* margin-bottom: 3rem; */
+        padding-bottom: 3rem;
+    }
+  }

@@ -1,0 +1,97 @@
+.bi-file-earmark-arrow-down {
+    margin-left: 12px;
+}
+
+.about-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.about-image {
+    height: auto;
+    width: auto;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about-info {
+    grid-template-columns: repeat(3, 140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about-box {
+    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about-icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+}
+
+.about-title {
+    font-size: var(--s-size);
+    font-weight: var(--font-medium);
+}
+
+.about-subtitle {
+    font-size: var(--xs-size);
+    color: var(--text-color);
+}
+
+.about-description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+    color: var(--text-color);
+}
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about-image {
+        width: 220px;
+    }
+
+    .about-box {
+        padding: 0,75rem 0.5rem;
+    }
+
+    .about-data {
+        text-align: center;
+    }
+
+    .about-info {
+        justify-content: center;
+    }
+
+    .about-description {
+        padding: 0 5rem;
+        margin-bottom: var(--mb-2);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .about-info {
+        grid-template-columns: repeat(3, 110px);
+    }
+
+    .about-description {
+        padding: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 350px) {
+    .about-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }

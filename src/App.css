@@ -1,0 +1,252 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+/* Variables */
+
+#root {
+  --header-height: 3rem;
+
+  /* Fonts */
+  --body-font: 'Victor Mono', monospace;
+  --accent-font: 'Quicksand', sans-serif;
+  --optional-font: 'Mulish', sans-serif;
+
+  /* Font Size - 0.5rem = 8px; | 1rem = 16px */
+  --xxxl-font: 3.5rem;
+  --xxl-size: 2.25rem;
+  --xl-size: 1.5rem;
+  --l-size: 1.25rem;
+  --r-size: 1rem;
+  --s-size: 0.875rem;
+  --xs-size: 0.813rem;
+  --xxs-size: 0.625rem;
+
+  /* Font Weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /* Bottom Margins */
+  /* 0.5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* Layer Position */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Light Colors */
+#light {
+  --title-color: #3a3ae3;
+  --title-color-dark: #1212DC;
+  --text-color: #272727;
+  --body-color: #E7E7E7 !important;
+  --body-muted-color: #bfbfbf;
+  --contaier-color: #E7E7E7;
+  --border-color: rgba(58, 58, 227, 0.2);
+  --success-color: rgb(18, 134, 18);
+  --success-color-hover: rgb(11, 89, 11);
+}
+
+/* Dark Colors */
+#dark {
+  --title-color: #ff7028;
+  --title-color-dark: #ff8e55;
+  --text-color: #c1baa8;
+  --body-color: #272727 !important;
+  --body-muted-color: #3c3c3c;
+  --contaier-color: #272727;
+  --border-color: rgba(231, 231, 231, 0.4);
+  --success-color: rgb(99, 247, 99);
+  --success-color-hover: rgb(172, 255, 172);
+}
+
+/* Theme Switcher */
+.switch-theme {
+  display: flex;
+  align-items: center;
+  transform: scale(0.80);
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 992px) {
+  :root {
+    --xxxl-font: 2.75rem;
+    --xxl-size: 1.5rem;
+    --xl-size: 1.25rem;
+    --l-size: 1rem;
+    --r-size: 1rem;
+    --s-size: 0.938rem;
+    --xs-size: 0.813rem;
+    --xxs-size: 0.75rem;
+  }
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--r-size);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--body-color) !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--accent-font);
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--body-font);
+  font-size: var(--r-size);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reusable Classes */
+.section {
+  padding: 6rem 0 2rem;
+  background-color: var(--body-color) !important;
+}
+
+.section-title {
+  font-size: var(--xxl-size);
+  color: var(--title-color);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--s-size);
+  margin-bottom: 4rem !important;
+  color: var(--text-color);
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+/* Layout */
+.container {
+  max-width: 968px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Buttons */
+.button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--title-color);
+  color: var(--contaier-color);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.button-icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Breakpoints */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-inline: var(--mb-1-5);
+  }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height);
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 350px) {
+  :root {
+    --xl-size: 2.25rem;
+  }
+
+  .container {
+    margin-inline: var(--mb-1);
+  }
+}

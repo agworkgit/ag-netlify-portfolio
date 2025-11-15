@@ -1,14 +1,14 @@
-const Frontend = () => {
+const Languages = () => {
     return (
         <div className='skills-content'>
-            <h3 className='skills-title'>Frontend</h3>
+            <h3 className='skills-title'>Languages</h3>
             <div className='skills-box'>
                 <div className='skills-group'>
                     <div className='skills-data'>
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>React</h3>
+                            <h3 className='skills-name'>JavaScript</h3>
                             <span className='skills-level'>Advanced</span>
                         </div>
                     </div>
@@ -17,7 +17,16 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>Axios</h3>
+                            <h3 className='skills-name'>TypeScript</h3>
+                            <span className='skills-level'>Intermmediate</span>
+                        </div>
+                    </div>
+
+                    <div className='skills-data'>
+                        <i className='bi bi-patch-check'></i>
+
+                        <div>
+                            <h3 className='skills-name'>HTML</h3>
                             <span className='skills-level'>Advanced</span>
                         </div>
                     </div>
@@ -26,35 +35,8 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>SASS</h3>
+                            <h3 className='skills-name'>CSS</h3>
                             <span className='skills-level'>Advanced</span>
-                        </div>
-                    </div>
-
-                    <div className='skills-data'>
-                        <i className='bi bi-patch-check'></i>
-
-                        <div>
-                            <h3 className='skills-name'>Tailwind</h3>
-                            <span className='skills-level'>Advanced</span>
-                        </div>
-                    </div>
-
-                    <div className='skills-data'>
-                        <i className='bi bi-patch-check'></i>
-
-                        <div>
-                            <h3 className='skills-name'>Bootstrap</h3>
-                            <span className='skills-level'>Advanced</span>
-                        </div>
-                    </div>
-
-                    <div className='skills-data'>
-                        <i className='bi bi-patch-check'></i>
-
-                        <div>
-                            <h3 className='skills-name'>DevTools</h3>
-                            <span className='skills-level'>Basic</span>
                         </div>
                     </div>
                 </div>
@@ -64,8 +46,8 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>Responsive Design</h3>
-                            <span className='skills-level'>Advanced</span>
+                            <h3 className='skills-name'>Python</h3>
+                            <span className='skills-level'>Basic</span>
                         </div>
                     </div>
 
@@ -73,10 +55,8 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>
-                                Web Content Accessibility
-                            </h3>
-                            <span className='skills-level'>Advanced</span>
+                            <h3 className='skills-name'>C#</h3>
+                            <span className='skills-level'>Basic</span>
                         </div>
                     </div>
 
@@ -84,8 +64,8 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>Figma</h3>
-                            <span className='skills-level'>Advanced</span>
+                            <h3 className='skills-name'>C</h3>
+                            <span className='skills-level'>Basic</span>
                         </div>
                     </div>
 
@@ -93,8 +73,8 @@ const Frontend = () => {
                         <i className='bi bi-patch-check'></i>
 
                         <div>
-                            <h3 className='skills-name'>Affinity Designer</h3>
-                            <span className='skills-level'>Advanced</span>
+                            <h3 className='skills-name'>SQL</h3>
+                            <span className='skills-level'>Basic</span>
                         </div>
                     </div>
                 </div>
@@ -103,4 +83,4 @@ const Frontend = () => {
     );
 };
 
-export default Frontend;
+export default Languages;

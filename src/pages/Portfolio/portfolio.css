@@ -15,7 +15,7 @@
 
 .project-container:last-child {
     /* margin-bottom: 3rem; */
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 .project-card {
@@ -84,7 +84,7 @@
     margin-right: var(--mb-1-5);
 }
 
-.project-deployed-button, 
+.project-deployed-button,
 .project-repo-button {
     cursor: pointer;
     width: fit-content;
@@ -93,7 +93,8 @@
     background-color: var(--title-color);
 }
 
-.dep-icon, .rep-icon {
+.dep-icon,
+.rep-icon {
     margin-right: var(--mb-1);
 }
 
@@ -123,22 +124,22 @@
         row-gap: 2.5rem;
     }
 
-    .project-deployed-button, 
+    .project-deployed-button,
     .project-repo-button {
-    cursor: pointer;
-    width: 47%;
-    font-size: var(--xs-size);
-    justify-content: center;
+        cursor: pointer;
+        width: 47%;
+        font-size: var(--xs-size);
+        justify-content: center;
+    }
 }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .project-deployed-button, 
+
+@media screen and (max-width: 768px) {
+    .project-deployed-button,
     .project-repo-button {
-    cursor: pointer;
-    width: 48%;
-    font-size: var(--xs-size);
-    justify-content: center;
+        cursor: pointer;
+        width: 48%;
+        font-size: var(--xs-size);
+        justify-content: center;
     }
 
     .project-section-subtitle {
@@ -157,19 +158,19 @@
         margin-inline: 0;
         padding-inline: 0rem;
     }
-  }
-  
-  @media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 700px) {
     .project-image {
         height: auto;
     }
 
-    .project-deployed-button, 
+    .project-deployed-button,
     .project-repo-button {
-    cursor: pointer;
-    width: 100%;
-    font-size: var(--xxs-size);
-    justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: var(--xxs-size);
+        justify-content: center;
     }
 
     .tech-stack-tags {
@@ -181,7 +182,7 @@
         padding-inline: 0rem;
     }
 
-    .portfolio-container{
+    .portfolio-container {
         padding-top: 0rem;
     }
 
@@ -193,9 +194,9 @@
         column-gap: 0rem;
         background-color: var(--body-color) !important;
     }
-    
+
     .project-container:last-child {
         /* margin-bottom: 3rem; */
-        padding-bottom: 3rem;
+        padding-bottom: 9rem;
     }
-  }
+}

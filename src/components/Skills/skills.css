@@ -22,7 +22,7 @@
 .skills-box {
     display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 5rem;
 }
 
 .skills-group {
@@ -58,9 +58,9 @@
         grid-template-columns: max-content;
         row-gap: 2rem;
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
     .skills-container {
         grid-template-columns: 1fr;
     }
@@ -68,9 +68,9 @@
     .skills-content {
         padding: 1.5rem;
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 350px) {
     .skills-box {
         column-gap: 1.25rem;
     }
@@ -78,4 +78,4 @@
     .skills-name {
         font-size: var(--s-size);
     }
-  }
+}

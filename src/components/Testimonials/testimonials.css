@@ -1,6 +1,7 @@
 .testimonials {
     margin: 0 auto;
     background-color: var(--body-color) !important;
+    padding-bottom: 2rem;
 }
 
 .testimonials-container {
@@ -13,6 +14,7 @@
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
     margin-bottom: var(--mb-3);
+    cursor: grab;
 }
 
 .testimonial-image {
@@ -51,21 +53,19 @@
     .testimonial-card {
         padding: 1.25rem 1.5rem;
     }
+}
 
-  }
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .testimonials-container {
         width: 500px;
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
     .testimonials-container {
         width: 325px;
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+}
 
-  }
+@media screen and (max-width: 350px) {
+}

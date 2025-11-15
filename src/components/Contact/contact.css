@@ -11,12 +11,14 @@
 
 #contact {
     padding-bottom: 12rem;
+    height: auto;
 }
 
 .contact-container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 6rem;
+    height: 100%;
     /* height: calc(max-content) + 6vh;
     margin-bottom: 6rem; */
 }
@@ -101,7 +103,7 @@
     color: var(--text-color);
     outline: none;
     border-radius: 0.75rem;
-    padding: 1.40rem;
+    padding: 1.4rem;
     z-index: 1;
     resize: none;
     /* Remove area re-size option */
@@ -151,9 +153,9 @@
     .contact-container {
         column-gap: 3rem;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
@@ -166,16 +168,15 @@
     .contact-form {
         margin: 0 auto;
     }
+}
 
-  }
-  
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .contact-info {
         grid-template-columns: 1fr;
     }
 
     .contact-form {
-        width: 100%;  
+        width: 100%;
     }
 
     .success-message {
@@ -185,8 +186,7 @@
     #contact {
         padding-bottom: 12rem;
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+}
 
-  }
+@media screen and (max-width: 350px) {
+}

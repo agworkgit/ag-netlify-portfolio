@@ -1,14 +1,17 @@
 .footer {
     background-color: var(--contaier-color);
     border-top: 1px solid var(--border-color);
+    position: relative;
+    bottom: 0;
+    width: auto;
 }
 
 .footer-container {
-    padding: 2rem 0 6rem;
-    height: 18.5rem;
+    height: 11.5rem;
 }
 
-.footer-title, .footer-link {
+.footer-title,
+.footer-link {
     color: var(--text-color);
 }
 
@@ -58,33 +61,37 @@
 .footer-copy {
     display: block;
     text-align: center;
-    margin-top: 4.5rem;
+    margin-top: 2rem;
     color: var(--title-color);
     font-size: var(--xs-size);
 }
 
 /* Breakpoints */
 @media screen and (max-width: 992px) {
-   .footer-social-link {
+    .footer-social-link {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-inline: 0.75rem;
         padding-block: 0.5rem;
         border-radius: 50px;
-   } 
-  }
+    }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .footer-container {
         padding: 2rem 0 12rem;
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
 
-  }
-  
-  @media screen and (max-width: 350px) {
+@media screen and (max-width: 576px) {
+    .footer-container {
+        display: none;
+    }
+}
 
-  }
+@media screen and (max-width: 350px) {
+    .footer-container {
+        display: none;
+    }
+}

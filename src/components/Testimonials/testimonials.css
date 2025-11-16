@@ -4,10 +4,6 @@
     padding-bottom: 2rem;
 }
 
-.testimonials-container {
-    width: 750px;
-}
-
 .testimonial-card {
     background-color: var(--contaier-color);
     border: 1px solid var(--border-color);
@@ -62,8 +58,12 @@
 }
 
 @media screen and (max-width: 576px) {
+    .testimonials {
+        padding-inline: 1rem;
+    }
+
     .testimonials-container {
-        width: 325px;
+        width: auto;
     }
 }
 

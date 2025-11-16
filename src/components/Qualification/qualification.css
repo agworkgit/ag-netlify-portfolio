@@ -4,10 +4,6 @@
     margin-right: 6px;
 }
 
-.qualification-container {
-    max-width: 768px;
-}
-
 .qualification-tabs {
     display: flex;
     justify-content: center;

@@ -3,9 +3,9 @@
 }
 
 .services-container {
-    grid-template-columns: repeat(3, 270px);
-    justify-content: center;
-    column-gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    column-gap: 1.5rem;
 }
 
 .services-content {

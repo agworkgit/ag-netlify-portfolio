@@ -3,15 +3,15 @@
 }
 
 .skills-container {
-    grid-template-columns: repeat(2, 420px);
-    column-gap: 3rem;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    justify-content: space-between;
 }
 
 .skills-content {
     background-color: var(--contaier-color);
     border: 1px solid var(--border-color);
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     border-radius: 1.25rem;
 }
 

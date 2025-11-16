@@ -41,7 +41,7 @@
 }
 
 .home-subtitle::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 70px;
     height: 1px;
@@ -142,12 +142,17 @@
     .home-scroll {
         margin-left: 7.5rem;
     }
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .home-content {
         grid-template-rows: 0.5fr 3fr;
         padding-top: 0rem;
+        padding-inline: 1rem;
+    }
+
+    .home-description {
+        font-size: 0.75rem;
     }
 
     .home-image {
@@ -168,9 +173,13 @@
     .home-scroll {
         display: none;
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 350px) {
+    .home-description {
+        font-size: 0.75rem;
+    }
+
     .home-image {
         width: 180px;
         height: 180px;

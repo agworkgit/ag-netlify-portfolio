@@ -19,7 +19,6 @@
     display: block;
     font-size: 2rem;
     color: var(--title-color);
-
 }
 
 .services-title {
@@ -87,7 +86,8 @@
     border-radius: 50px;
 }
 
-.services-modal-title, .services-modal-description {
+.services-modal-title,
+.services-modal-description {
     text-align: center;
 }
 
@@ -136,34 +136,60 @@
     .services-container {
         grid-template-columns: repeat(3, 218px);
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .services-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .services-content {
-       padding: 3.5rem 0.5rem 1.25rem 1.5rem; 
+        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
     }
 
     .services-icon {
         font-size: 1.5rem;
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
+    #services {
+        padding-inline: 1rem;
+    }
+
+    .services-container {
+        column-gap: 1rem;
+        row-gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .services-content {
+        padding: 1.5rem;
+    }
+
     .services-modal-content {
-        padding: 4.5rem 1.5rem 2.5rem;
+        padding: 4.5rem 2rem 1.5rem;
     }
 
     .services-modal-description {
+        font-size: 0.65rem;
         padding: 0;
-
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+
+    .services-modal-title {
+        font-size: 1.25rem;
+    }
+
+    .services-modal-info {
+        font-size: 0.65rem;
+    }
+
+    .services-button {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
     .services-container {
         grid-template-columns: max-content;
     }
@@ -171,4 +197,4 @@
     .services-content {
         padding: 6rem;
     }
-  }
+}

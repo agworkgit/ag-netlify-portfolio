@@ -1,4 +1,6 @@
-.bi-calendar3, .bi-clock-history, .bi-mortarboard {
+.bi-calendar3,
+.bi-clock-history,
+.bi-mortarboard {
     margin-right: 6px;
 }
 
@@ -7,9 +9,9 @@
 }
 
 .qualification-tabs {
-   display: flex;
-   justify-content: center;
-   margin-bottom: var(--mb-2); 
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
 }
 
 .qualification-button {
@@ -90,26 +92,27 @@
     .qualification-container {
         margin-inline: auto;
     }
-  }
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .qualification-container {
         margin-inline: var(--mb-1-5);
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
     .qualification-sections {
         grid-template-columns: initial;
+        padding-inline: 1rem;
     }
 
     .qualification-button {
         margin: 0 var(--mb-0-75);
     }
-  }
-  
-  @media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 350px) {
     .qualification-data {
         gap: 0.5rem;
     }
-  }
+}

@@ -9,10 +9,11 @@
 }
 
 .about-image {
-    height: auto;
+    height: 100%;
     width: auto;
-    border-radius: 1.5rem;
+    border-radius: 15px;
     justify-self: center;
+    object-fit: cover;
 }
 
 .about-data {
@@ -88,13 +89,22 @@
 }
 
 @media screen and (max-width: 576px) {
+    #about {
+        padding-inline: 1rem;
+    }
+
     .about-info {
-        grid-template-columns: repeat(3, 110px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-image {
+        width: 100%;
+        border-radius: 15px;
     }
 
     .about-description {
-        padding: 1rem;
-        margin-inline: 0.75rem;
+        padding: 0.25rem;
+        font-size: 0.75rem;
     }
 }
 

@@ -7,6 +7,7 @@
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .home-social {
@@ -146,7 +147,8 @@
 
 @media screen and (max-width: 768px) {
     .home-content {
-        grid-template-rows: 0.5fr 3fr;
+        grid-template-rows: 0.5fr 2fr;
+        gap: 0;
         padding-top: 0rem;
         padding-inline: 1rem;
     }

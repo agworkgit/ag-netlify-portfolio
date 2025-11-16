@@ -169,6 +169,8 @@
 
     .services-modal-content {
         padding: 4.5rem 2rem 1.5rem;
+        max-height: 90%;
+        overflow: scroll;
     }
 
     .services-modal-description {
@@ -177,7 +179,7 @@
     }
 
     .services-modal-title {
-        font-size: 1.25rem;
+        font-size: var(--l-size);
     }
 
     .services-modal-info {

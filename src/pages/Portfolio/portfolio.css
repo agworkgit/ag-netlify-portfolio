@@ -54,6 +54,7 @@
     /* width: 90%; */
     padding-inline: 3rem;
     margin-inline: auto;
+    text-align: justify;
 }
 
 .project-purpose {
@@ -66,6 +67,7 @@
     margin-bottom: var(--mb-1);
     padding-inline: 3rem;
     margin-inline: auto;
+    text-align: justify;
 }
 
 .project-image {
@@ -198,5 +200,11 @@
     .project-container:last-child {
         /* margin-bottom: 3rem; */
         padding-bottom: 9rem;
+    }
+
+    .project-subtitle,
+    .project-purpose {
+        font-size: 0.65rem;
+        text-align: justify;
     }
 }

@@ -65,6 +65,10 @@
     .testimonials-container {
         width: auto;
     }
+
+    .testimonial-description {
+        font-size: var(--xs-size);
+    }
 }
 
 @media screen and (max-width: 350px) {

@@ -3,7 +3,7 @@
     border-top: 1px solid var(--border-color);
     position: relative;
     bottom: 0;
-    width: auto;
+    width: 100%;
 }
 
 .footer-container {
@@ -22,7 +22,7 @@
 }
 
 .footer-link {
-    font-size: var(--r-size);
+    font-size: var(--xs-size);
 }
 
 .footer-link:hover {
@@ -63,7 +63,7 @@
     text-align: center;
     margin-top: 2rem;
     color: var(--title-color);
-    font-size: var(--xs-size);
+    font-size: var(--xxs-size);
 }
 
 /* Breakpoints */

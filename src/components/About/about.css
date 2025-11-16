@@ -93,12 +93,18 @@
         padding-inline: 1rem;
     }
 
+    .about-data {
+        align-items: start;
+    }
+
     .about-info {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .about-image {
         width: 100%;
+        max-height: 25vh;
+        object-position: bottom;
         border-radius: 15px;
     }
 

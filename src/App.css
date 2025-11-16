@@ -54,7 +54,7 @@
     --title-color-dark: #1212dc;
     --text-color: #272727;
     --body-color: #e7e7e7 !important;
-    --body-muted-color: #bfbfbf;
+    --body-muted-color: #dddddd;
     --contaier-color: #e7e7e7;
     --border-color: rgba(58, 58, 227, 0.2);
     --success-color: rgb(18, 134, 18);
@@ -67,7 +67,7 @@
     --title-color-dark: #ff8e55;
     --text-color: #c1baa8;
     --body-color: #272727 !important;
-    --body-muted-color: #3c3c3c;
+    --body-muted-color: #303030;
     --contaier-color: #272727;
     --border-color: rgba(231, 231, 231, 0.4);
     --success-color: rgb(99, 247, 99);
@@ -103,6 +103,7 @@
 }
 
 html {
+    background-color: var(--body-color) !important;
     overflow-x: hidden;
     scroll-behavior: smooth;
     height: 100%;
@@ -153,7 +154,7 @@ img {
 
 /* Reusable Classes */
 .section {
-    height: 100%;
+    height: auto;
     padding-top: 6rem;
     background-color: var(--body-color) !important;
 }
@@ -166,7 +167,7 @@ img {
 .section-subtitle {
     display: block;
     font-size: var(--s-size);
-    margin-bottom: 4rem !important;
+    margin-bottom: 4rem;
     color: var(--text-color);
 }
 
@@ -244,6 +245,11 @@ img {
 @media screen and (max-width: 576px) {
     .section-subtitle {
         font-size: 0.75rem;
+        margin: var(--mb-0-5);
+    }
+
+    .grid {
+        justify-content: center;
     }
 }
 
@@ -254,5 +260,9 @@ img {
 
     .container {
         margin-inline: var(--mb-1);
+    }
+
+    .grid {
+        justify-content: center;
     }
 }

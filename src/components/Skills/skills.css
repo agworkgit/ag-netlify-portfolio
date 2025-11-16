@@ -73,6 +73,11 @@
     .skills-content {
         padding: 1rem;
     }
+
+    .skills-name,
+    .skills-level {
+        font-size: var(--xs-size);
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -81,6 +86,6 @@
     }
 
     .skills-name {
-        font-size: var(--s-size);
+        font-size: var(--xs-size);
     }
 }

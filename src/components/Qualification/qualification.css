@@ -105,6 +105,12 @@
     .qualification-button {
         margin: 0 var(--mb-0-75);
     }
+
+    .qualification-title,
+    .qualification-subtitle,
+    .qualification-calendar {
+        font-size: var(--xs-size);
+    }
 }
 
 @media screen and (max-width: 350px) {

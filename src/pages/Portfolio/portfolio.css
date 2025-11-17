@@ -78,7 +78,7 @@
     object-fit: cover;
     object-position: top;
     background-repeat: no-repeat;
-    border-radius: 1.25rem;
+    border-radius: 0.5rem;
     justify-self: center;
     margin-block: var(--mb-1);
 }

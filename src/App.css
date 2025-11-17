@@ -152,6 +152,10 @@ img {
     height: auto;
 }
 
+.App {
+    background-color: var(--body-color) !important;
+}
+
 /* Reusable Classes */
 .section {
     height: auto;

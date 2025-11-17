@@ -104,7 +104,7 @@
 @media screen and (max-width: 576px) {
     .qualification-sections {
         grid-template-columns: initial;
-        padding-inline: 1rem;
+        /* padding-inline: 1rem; */
     }
 
     .qualification-container {

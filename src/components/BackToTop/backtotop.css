@@ -30,7 +30,7 @@
     }
 
     .back-to-top-icon {
-        font-size: var(--xl-size);
+        font-size: var(--xxl-size);
     }
 }
 
@@ -47,7 +47,8 @@
 
 @media screen and (max-width: 576px) {
     .back-to-top {
-        right: 1rem;
+        right: 0.5rem;
+        bottom: 0.5rem;
         padding: 0.25rem 0.4rem;
     }
 }

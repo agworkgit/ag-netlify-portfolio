@@ -4,10 +4,11 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    padding-top: 1rem;
 }
 
 .footer-container {
-    height: 11.5rem;
+    height: 10rem;
 }
 
 .footer-title,
@@ -80,19 +81,19 @@
 
 @media screen and (max-width: 768px) {
     .footer-container {
-        padding: 2rem 0 12rem;
-        height: 15rem;
+        padding: 1rem;
+        height: 12rem;
     }
 }
 
 @media screen and (max-width: 576px) {
     .footer-container {
-        display: none;
+        /* display: none; */
     }
 }
 
 @media screen and (max-width: 350px) {
     .footer-container {
-        display: none;
+        /* display: none; */
     }
 }

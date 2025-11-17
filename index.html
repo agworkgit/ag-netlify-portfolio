@@ -5,6 +5,11 @@
         <!-- Theme -->
         <meta name="theme-color" content="#000000" />
 
+        <script>
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        </script>
+
         <link
             rel="icon"
             type="image/png"

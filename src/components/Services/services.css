@@ -1,3 +1,9 @@
+.body-lock {
+    overflow: hidden;
+    height: 100dvh;
+    touch-action: none;
+}
+
 .bi-x {
     color: var(--title-color);
 }

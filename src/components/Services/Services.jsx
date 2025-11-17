@@ -3,6 +3,15 @@ import './services.css';
 
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
+
+    useEffect(() => {
+        if (toggleState !== 0) {
+            document.body.classList.add('body-lock');
+        } else {
+            document.body.classList.remove('body-lock');
+        }
+    }, [toggleState]);
+
     const toggleTab = (index) => {
         setToggleState(index);
     };

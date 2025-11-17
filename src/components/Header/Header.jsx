@@ -35,11 +35,6 @@ const Header = () => {
                     AG
                 </Link>
 
-                {/* Hamburger */}
-                <div className='nav-toggle' onClick={handleMenuToggle}>
-                    <i className='bi bi-list'></i>
-                </div>
-
                 {/* Theme toggle */}
                 <div className='switch-theme'>
                     <ReactSwitch
@@ -51,6 +46,11 @@ const Header = () => {
                         uncheckedIcon={false}
                         checkedIcon={false}
                     />
+                </div>
+
+                {/* Hamburger */}
+                <div className='nav-toggle' onClick={handleMenuToggle}>
+                    <i className='bi bi-list'></i>
                 </div>
 
                 {/* Overlay */}

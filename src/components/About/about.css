@@ -23,7 +23,7 @@
 }
 
 .about-info {
-    grid-template-columns: repeat(3, 140px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
     margin-bottom: var(--mb-2);
 }
@@ -33,7 +33,7 @@
     border: 1px solid var(--border-color);
     border-radius: 0.75rem;
     text-align: center;
-    padding: 1rem 1.25rem;
+    padding: 0.5rem;
 }
 
 .about-icon {
@@ -62,10 +62,13 @@
     .about-container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        padding-inline: 2rem !important;
     }
 
     .about-image {
-        width: 220px;
+        width: 100%;
+        max-height: 25vh;
+        object-position: bottom;
     }
 
     .about-box {
@@ -74,23 +77,40 @@
 
     .about-data {
         text-align: center;
-        align-items: center;
+        align-items: start;
     }
 
     .about-info {
         justify-content: center;
+        width: 100%;
     }
 
     .about-description {
-        padding: 0 5rem;
+        /* padding: 0 5rem; */
         margin-bottom: var(--mb-2);
-        text-align: left;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .about-container {
+        align-items: start;
+        padding-inline: 2rem !important;
+    }
+
+    .about-image {
+        width: 100%;
+        max-height: 25vh;
+        object-position: center;
+        border-radius: 15px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    #about {
-        padding-inline: 1rem;
+    .about-container {
+        width: auto;
+        padding-inline: 1.5rem !important;
+        margin: 0 auto;
     }
 
     .about-data {
@@ -98,7 +118,8 @@
     }
 
     .about-info {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto, 1fr);
+        margin-inline: auto;
     }
 
     .about-image {
@@ -109,7 +130,7 @@
     }
 
     .about-description {
-        padding: 0.25rem;
+        /* padding: 0.25rem; */
         font-size: 0.75rem;
     }
 }

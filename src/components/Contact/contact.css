@@ -15,6 +15,10 @@
     overflow-x: hidden;
 }
 
+.contact {
+    align-content: start;
+}
+
 .contact-container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;

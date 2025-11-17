@@ -102,6 +102,10 @@
         padding-inline: 1rem;
     }
 
+    .qualification-container {
+        padding-inline: 0.5rem !important;
+    }
+
     .qualification-button {
         margin: 0 var(--mb-0-75);
     }

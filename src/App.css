@@ -167,7 +167,7 @@ img {
 .section-subtitle {
     display: block;
     font-size: var(--s-size);
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
 }
 

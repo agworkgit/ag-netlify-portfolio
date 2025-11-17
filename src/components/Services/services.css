@@ -134,7 +134,8 @@
 /* Breakpoints */
 @media screen and (max-width: 992px) {
     .services-container {
-        grid-template-columns: repeat(3, 218px);
+        grid-template-columns: repeat(3, 1fr);
+        padding-inline: 2rem !important;
     }
 }
 
@@ -160,7 +161,7 @@
     .services-container {
         column-gap: 1rem;
         row-gap: 1rem;
-        padding-inline: 1rem;
+        padding-inline: 0.5rem !important;
     }
 
     .services-content {

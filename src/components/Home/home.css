@@ -1,5 +1,7 @@
 .home-container {
     row-gap: 7rem;
+    height: 100vh;
+    align-items: start;
 }
 
 .home-content {
@@ -88,7 +90,7 @@
 }
 
 .home-scroll {
-    margin-left: 9.25rem;
+    margin: 0 auto;
     animation: mouse-animate 3s ease-in-out infinite;
 }
 
@@ -114,9 +116,30 @@
 
 /* Breakpoints */
 @media screen and (max-width: 992px) {
+    .home-container {
+        height: 100vh;
+        align-items: start;
+    }
+
     .home-content {
-        grid-template-columns: 100px repeat(2, 1fr);
-        column-gap: 1.25rem;
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 5rem;
+        padding-top: 0rem;
+        padding-inline: 1rem;
+    }
+
+    .home-data {
+        grid-column: 1/6;
+    }
+
+    .home-image {
+        order: initial;
+        justify-self: end;
+        grid-column: 3/4;
+    }
+
+    .home-data {
+        grid-column: 1/4;
     }
 
     .home-subtitle {
@@ -141,29 +164,42 @@
     }
 
     .home-scroll {
-        margin-left: 7.5rem;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .home-content {
+        grid-template-rows: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .home-content {
-        grid-template-rows: 0.5fr 2fr;
-        gap: 0;
-        padding-top: 0rem;
-        padding-inline: 1rem;
+    .home-container {
+        height: 100vh;
+        align-items: start;
     }
 
-    .home-description {
-        font-size: 0.75rem;
+    .home-content {
+        grid-template-rows: repeat(1, 1fr);
+        column-gap: 0rem;
+        row-gap: 5rem;
+        padding-top: 0rem;
+        padding-inline: 0.5rem;
+    }
+
+    .home-data {
+        grid-column: 1/6;
     }
 
     .home-image {
         order: initial;
-        justify-self: initial;
+        justify-self: end;
+        grid-column: 3/4;
     }
 
     .home-data {
-        grid-column: 1/3;
+        grid-column: 1/4;
     }
 
     .home-image {
@@ -177,7 +213,24 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 375px) {
+    .home-container {
+        height: 100vh;
+        align-items: start;
+    }
+
+    .home-content {
+        grid-template-rows: repeat(1, 1fr);
+        align-items: start;
+        row-gap: 5rem;
+        padding-top: 0rem;
+        padding-inline: 0.5rem;
+    }
+
+    .home-data {
+        grid-column: 1/4;
+    }
+
     .home-description {
         font-size: 0.75rem;
     }

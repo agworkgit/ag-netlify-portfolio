@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Data = () => {
     return (
         <div className='home-data'>
-            <h1 className='home-title'>Hi, nice to meet you!</h1>
+            <h1 className='home-title'>Hi, welcome to my portfolio!</h1>
             <h3 className='home-subtitle'>Junior Full Stack Developer</h3>
             <p className='home-description'>
                 Crafting practical, testable, real-world web applications —

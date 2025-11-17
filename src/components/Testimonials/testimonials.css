@@ -43,7 +43,8 @@
 /* Breakpoints */
 @media screen and (max-width: 992px) {
     .testimonials-container {
-        width: 650px;
+        width: auto;
+        padding-inline: 2rem !important;
     }
 
     .testimonial-card {
@@ -51,9 +52,15 @@
     }
 }
 
+@media screen and (max-width: 853px) {
+    .testimonials-container {
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .testimonials-container {
-        width: 500px;
+        width: auto;
     }
 }
 
@@ -63,6 +70,7 @@
     }
 
     .testimonials-container {
+        padding-inline: 0.5rem !important;
         width: auto;
     }
 

@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-color: var(--body-color) !important;
     padding-bottom: 2rem;
+    height: auto;
 }
 
 .testimonial-card {
@@ -67,6 +68,7 @@
 @media screen and (max-width: 576px) {
     .testimonials {
         padding-inline: 1rem;
+        padding-bottom: 6rem;
     }
 
     .testimonials-container {
@@ -80,4 +82,7 @@
 }
 
 @media screen and (max-width: 350px) {
+    .testimonials {
+        padding-bottom: 6rem;
+    }
 }

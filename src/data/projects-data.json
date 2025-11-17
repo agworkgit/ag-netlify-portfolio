@@ -1,6 +1,67 @@
 [
     {
         "id": 1,
+        "title": "InsightHub",
+        "description": "InsightHub is a full-stack web application designed for streamlined data exploration and visualization. Users can upload CSV/JSON datasets, build interactive dashboards with intelligent chart configurations, apply aggregation logic with automatic preprocessing, and export dashboards as professional PDFs. The app also supports drag-and-drop dashboard layouts, theme toggling, and a smooth, responsive interface for an enhanced data analysis experience.",
+        "purpose": "The project aimed to provide a lightweight but powerful platform for data exploration, enabling users to quickly gain insights from datasets without the overhead of complex tools. My goal was to deliver an intuitive interface, robust backend processing, and seamless frontend interactions while handling large datasets efficiently, making it ideal for both solo developers and small teams.",
+        "problems": "Key challenges included designing an intelligent data preprocessing pipeline capable of handling multiple aggregation types, managing high-cardinality datasets, and implementing type inference for quantitative, categorical, and temporal fields. Building a flexible dashboard layout with drag-and-drop reordering and real-time validation also required extensive research into frontend libraries. Additionally, implementing PDF export that maintains layout, aspect ratios, and multi-page support was a non-trivial task.",
+        "lessons": "Developing InsightHub reinforced the importance of balancing performance, usability, and scalability. Intelligent type inference and top-10 category limiting taught me how preprocessing can drastically improve UI performance. Implementing drag-and-drop with smooth animations highlighted the subtle impact of UX design on user satisfaction. Exporting dashboards as PDFs underlined the importance of cross-browser consistency and precise layout control. Overall, the project emphasized the integration of data processing, frontend interactivity, and backend reliability to deliver a polished full-stack application.",
+        "image": "./assets/images/projects/insighthub-demo.png",
+        "techStack": "React (TypeScript), Node.js, Express, MongoDB, Vite, Recharts, dnd-kit, html2canvas, jsPDF, SASS, JWT, PapaParse, Axios",
+        "linkDeployed": "https://insighthub-frontend-nine.vercel.app/",
+        "linkRepo": "https://github.com/agworkgit/insighthub"
+    },
+    {
+        "id": 2,
+        "title": "Chef Claude",
+        "description": "Chef Claude is a web application that dynamically generates recipes based on user-provided ingredients. Users can input a list of ingredients, and the app fetches recipe suggestions from a Node.js/Express backend using the OpenAI API. Recipes are displayed in a readable markdown format, and the app features a responsive React frontend with seamless API integration.",
+        "purpose": "The purpose of Chef Claude is to provide users with an effortless way to discover new recipes using only the ingredients they have on hand. By leveraging AI-powered recipe generation, the app simplifies meal planning, inspires creativity in cooking, and demonstrates full-stack integration between a React frontend and a Node.js backend.",
+        "problems": "Key challenges included migrating the backend from a Vercel serverless function to a dedicated Express server, ensuring proper CORS configuration for the React frontend, and managing reliable communication between the frontend and backend APIs. Handling dynamic AI responses and formatting them cleanly in markdown was also a technical hurdle.",
+        "lessons": "Developing Chef Claude reinforced the importance of clear API design, seamless frontend-backend integration, and handling edge cases in AI-generated content. Deploying the backend on Render highlighted the value of a dedicated server for stability and avoiding serverless function limitations. Overall, the project taught effective API architecture, deployment strategies, and enhancing user experience when working with dynamically generated content.",
+        "image": "./assets/images/projects/chef-claude-demo.png",
+        "techStack": "React, Node.js, Express, OpenAI API, Vercel, Render, react-markdown, CORS",
+        "linkDeployed": "https://chef-claude-lyart.vercel.app",
+        "linkRepo": "https://github.com/agworkgit/chef-claude"
+    },
+    {
+        "id": 3,
+        "title": "TaskFlow - Smart Task Management",
+        "description": "TaskFlow is a modern, responsive task management web app that helps users efficiently organize and track their tasks. It supports adding, editing, deleting, and filtering tasks, interactive charts for progress visualization, drag-and-drop reordering, and light/dark mode toggling for a customizable user experience.",
+        "purpose": "The project aims to provide a clean, intuitive platform for managing daily tasks and visualizing progress. By combining interactive charts, task filtering, and responsive design, TaskFlow helps users stay organized and motivated while demonstrating practical use of React, Tailwind, and modern frontend techniques.",
+        "problems": "Challenges included implementing smooth drag-and-drop functionality for task reordering, creating responsive and accessible charts for task statistics, and ensuring persistent storage across sessions using LocalStorage. Balancing interactive features with a lightweight, fast user experience required careful UI and state management.",
+        "lessons": "Developing TaskFlow reinforced the importance of responsive design, state management, and usability. Drag-and-drop interactions taught how to integrate third-party libraries effectively, while chart visualizations demonstrated how to make data meaningful and engaging. Overall, the project highlighted the value of combining functionality with a clean, user-friendly interface.",
+        "image": "./assets/images/projects/taskflow-demo.png",
+        "techStack": "React, Tailwind CSS, @hello-pangea/dnd, Recharts, React Helmet, Vercel",
+        "linkDeployed": "https://taskflow-woad-omega.vercel.app",
+        "linkRepo": "https://github.com/agworkgit/taskflow"
+    },
+    {
+        "id": 4,
+        "title": "Phantom Rush - 2D Shooter Game",
+        "description": "Phantom Rush is a fast-paced, top-down 2D shooter built entirely in vanilla JavaScript. Players survive waves of enemies, dodge attacks, and accumulate points in a dynamic, real-time combat environment rendered using the HTML5 Canvas API.",
+        "purpose": "The project aims to create an engaging browser-based arcade shooter that demonstrates real-time gameplay mechanics, collision detection, and interactive UI elements without relying on frameworks. It provides a platform to explore game loops, rendering, and responsive controls in pure JavaScript.",
+        "problems": "Challenges included implementing smooth real-time combat using requestAnimationFrame, handling collision detection between bullets and enemies, dynamically updating health bars and game states, and ensuring responsive controls for precise movement and aiming.",
+        "lessons": "Developing Phantom Rush reinforced my understanding of game loops, canvas rendering, collision logic, and state management in vanilla JavaScript. I learned to optimize performance for smooth gameplay, structure modular game logic, and plan future enhancements like enemy AI patterns, power-ups, and mobile support.",
+        "image": "./assets/images/projects/phantom-rush-demo.gif",
+        "techStack": "JavaScript (ES6), HTML5 Canvas, CSS3",
+        "linkDeployed": "https://your-deployment-link.com",
+        "linkRepo": "https://github.com/agworkgit/phantom-rush"
+    },
+
+    {
+        "id": 5,
+        "title": "PixelPulse - Interactive Music Visualiser",
+        "description": "PixelPulse is a lightweight, browser-based music visualiser that syncs interactive visuals with audio playback. Users can upload their own tracks or use the default audio, with multiple visual themes that respond in real time to music frequencies, all in a responsive and visually constrained canvas.",
+        "purpose": "The goal of PixelPulse is to create an engaging, real-time audio visualisation experience in the browser. It allows users to explore music visually, experiment with different themes, and enjoy responsive, interactive animations without any heavy dependencies.",
+        "problems": "Challenges included implementing real-time FFT analysis for accurate audio visualization, ensuring that visuals remained fully constrained within the canvas boundaries, and persisting user-selected themes across sessions. Maintaining performance while updating visuals every frame required careful optimisation of the rendering loop.",
+        "lessons": "Building PixelPulse reinforced skills in real-time audio processing, canvas-based rendering, and state persistence. I learned to balance visual complexity with performance, handle user interactions smoothly, and integrate Web Audio API with p5.js for an immersive experience. It highlighted the power of lightweight, browser-based creative coding.",
+        "image": "./assets/images/projects/pixelpulse-demo.png",
+        "techStack": "JavaScript (ES6), p5.js, Web Audio API, HTML5, CSS3",
+        "linkDeployed": "https://your-deployment-link.com",
+        "linkRepo": "https://github.com/agworkgit/pixelpulse"
+    },
+    {
+        "id": 6,
         "title": "Personal Portfolio",
         "description": "I recreated my original portfolio in React with the features I always dreamed of having on my first few portfolios, now the data is laid out beautifully with clear sections about my experience, education, a way to download my CV and multiple ways to get in touch with me. While designing it I added features such as a theme toggle for accessibility, consolidated large amounts of data in modals, added some interactivity with subtle element animations and implemented a swiping container for the testimonials I received.",
         "purpose": "In the pursuit of revamping my portfolio using React, the primary objective was to create a more comprehensive and user-friendly platform. Reflecting on my professional journey, I aimed to lay out my experience and education systematically. The recreation involved incorporating features like clear sections, an easily downloadable CV, and multiple contact options. The purpose was simple yet significant – to empower my digital presence by presenting my data in a well-organized and accessible format.",
@@ -12,7 +73,7 @@
         "linkRepo": "https://github.com/agworkgit/new-portfolio"
     },
     {
-        "id": 2,
+        "id": 7,
         "title": "Travel Fanatix",
         "description": "Embark on a seamless exploration of foreign cities with the Travel Fanatix daily travel planner, a collaborative masterpiece brought to you by a dynamic team of four individuals, including myself. No longer do travelers need to struggle with planning their day in unfamiliar territories. Our team, with fantastic communication and planning, harnessed the power of DayJS, Tourist Attraction API, OpenWeather, and Unsplash to create an intuitive application. The planner not only allows manual input but also suggests five carefully curated points of interest in the city, complete with addresses, TripAdvisor rankings, and captivating descriptions. With a simple click, add your chosen attractions to the planner and witness your day unfold effortlessly.",
         "purpose": "The purpose of the Travel Fanatix project, a collaborative effort of four passionate individuals, is to enhance the travel planning experience for users exploring foreign cities. Our goal was to provide a user-friendly application that seamlessly integrates date, time, weather, and curated points of interest, ensuring travelers can efficiently plan and enjoy their day in an unfamiliar location.",
@@ -24,7 +85,7 @@
         "linkRepo": "https://github.com/agworkgit/travel-fanatix"
     },
     {
-        "id": 3,
+        "id": 8,
         "title": "Professional Readme Generator",
         "description": "In the realm of software development, the need for efficient documentation is ever-present. Motivated by the recurring task of creating readme files for each new project, I embarked on building an automated tool. This project emerged from a personal necessity to streamline my workflow, eliminating the tedious process of researching file structures, crafting table of contents, and integrating badges for project technologies. This tool, grounded in Node.js, not only proved the power of automation but also addressed a real-world challenge faced by developers after completing each project. Now, let's delve into the purpose, the problems tackled, and the lessons gained from this endeavor.",
         "purpose": "The purpose behind the creation of this project was clear-cut – to provide developers with an automated tool capable of generating readme documentation files. Faced with the repetitive task of crafting documentation for every new project, I envisioned a solution that could efficiently take user input and produce comprehensive readme files. The ultimate goal was to simplify the documentation process, offering a streamlined workflow that spared developers from the complexities of researching file structures, crafting table of contents, and incorporating badges for project technologies.",
@@ -36,19 +97,7 @@
         "linkRepo": "https://github.com/agworkgit/readme-generator"
     },
     {
-        "id": 4,
-        "title": "Team Generator",
-        "description": "Driven by the need for a swift and effortless way to showcase team details, I embarked on creating an automated tool capable of generating HTML files based on user input. This project was born out of the desire to quickly produce a polished HTML page detailing my team without the hassle of manual HTML structuring and styling considerations. Rooted in the power of Node.js for automation, this tool stands out for its ability to deliver a presentable HTML page with minimal effort. Let's delve into the purpose, problems addressed, and lessons learned throughout this endeavor.",
-        "purpose": "The primary purpose behind developing this project was to offer a solution for the efficient creation of HTML files that showcase team details. Faced with the common challenge of needing a presentable HTML page to highlight team information, I envisioned an automated tool that would streamline the process. The objective was clear—to eliminate the need for individuals to invest time and effort in manually structuring HTML and styling it for team presentations.",
-        "problems": "This project directly tackles the challenge of structuring HTML and styling it for team presentations. By providing an automated solution, it removes the burden of users having to think about the intricacies of HTML formatting. The application serves as a time-saving remedy, sparing users from the complexities of HTML coding and styling considerations. The use of Node.js as a robust automation tool became evident, emphasizing its significance for running server-side applications and facilitating the streamlined generation of HTML files.",
-        "lessons": "Throughout the development of this automated team presentation tool, the profound lesson learned was the potency of minimal effort in achieving impactful results. Node.js emerged as a powerful ally, not only automating the HTML generation process but also emphasizing its indispensability for running server-side applications. The distinguishing feature of this project lies in its ability to swiftly produce a presentable HTML page, underscoring the value of simplicity and efficiency in the realm of automation. This tool stands out by addressing a common need—delivering a polished HTML presentation with minimal user effort, showcasing the transformative potential of user-focused, streamlined solutions in web development.",
-        "image": "./assets/images/projects/team-page-demo.png",
-        "techStack": "JavaScript, Node JS, HTML, CSS, Bootstrap",
-        "linkDeployed": "https://github.com/agworkgit/team-page-generator",
-        "linkRepo": "https://github.com/agworkgit/team-page-generator"
-    },
-    {
-        "id": 5,
+        "id": 9,
         "title": "Geolocation Weather Forecast App",
         "description": "In the pursuit of creating a comprehensive weather forecast dashboard, I set out to develop a solution that incorporated geolocation from an API and persistent data. This project aimed to provide users with real-time weather updates based on their location while ensuring the persistence of relevant data. The core focus was to seamlessly integrate geolocation, API data retrieval, and data persistence to deliver an informative and user-friendly weather dashboard. Let's explore the purpose, problems addressed, and the lessons gained from this endeavor.",
         "purpose": "The primary purpose behind the development of this weather forecast dashboard was to offer users a dynamic and real-time tool for obtaining weather insights. Leveraging geolocation from an API, the project sought to provide accurate and location-specific weather updates. The emphasis on persistent data aimed to enhance user experience by ensuring that relevant information is readily available across sessions. Ultimately, the goal was to create an intuitive dashboard that seamlessly combines geolocation and persistent data for a comprehensive weather forecasting experience.",
@@ -60,7 +109,7 @@
         "linkRepo": "https://github.com/agworkgit/geolocation-forecast-app"
     },
     {
-        "id": 6,
+        "id": 10,
         "title": "JavaScript Quiz Web App",
         "description": "In the realm of web development, I embarked on the creation of a timed quiz web app designed to challenge users' coding skills. Stripped down to its essence, this project focuses on providing users with a platform to assess their coding proficiency within a defined time frame. The primary goal is to offer an interactive and self-paced experience, allowing users to evaluate their coding capabilities through a timed quiz. Let's delve into the purpose, the straightforward challenges addressed, and the core insights gained during the development of this coding skills evaluation tool.",
         "purpose": "The central purpose behind the timed quiz web app is to create a space where users can conduct a self-paced assessment of their coding skills. Distinct from a formal educational context, this project aims to offer a straightforward and accessible platform for individuals to test their coding abilities. The emphasis is on simplicity, allowing users to engage with the quiz at their own pace and evaluate their coding proficiency in a timed setting.",
@@ -70,17 +119,5 @@
         "techStack": "HTML, CSS, JavaScript, Persistent Data",
         "linkDeployed": "https://agworkgit.github.io/quiz-web-app/",
         "linkRepo": "https://github.com/agworkgit/quiz-web-app"
-    },
-    {
-        "id": 7,
-        "title": "Dragon Repeller - RPG Game",
-        "description": "Fueled by the desire to leverage my JavaScript skills, I embarked on the creation of a simple RPG game. This project served as a dynamic canvas for honing my coding abilities and pushing my creative boundaries. The motivation was clear: to engage in deliberate practice, challenge myself, and deliver an enjoyable gaming experience. The RPG game not only showcases my technical prowess but also incorporates entertaining elements, including a custom theme song from a previous musical project, a distinctive video background, and sound effects that enhance interactivity. Let's explore the purpose, challenges faced, and the creative insights gained from this endeavor.",
-        "purpose": "The primary purpose behind building this RPG game was to provide a platform for practicing and refining JavaScript skills. Beyond the technical aspect, the project aimed to challenge me creatively, fostering an environment where coding becomes an enjoyable and immersive experience. The focus was on creating a simple RPG that not only served as a coding exercise but also delivered a gaming adventure filled with interactivity and entertainment.",
-        "problems": "The project's challenges were twofold – mastering JavaScript intricacies and seamlessly integrating entertaining elements. Designing a game that goes beyond functionality to include a custom theme song, a captivating video background, and engaging sound effects demanded a thoughtful approach. The challenge lay in not just creating an RPG but infusing it with entertaining components that enhance the overall user experience. This meant navigating the complexities of integrating sound, music, and video backgrounds to create an immersive and enjoyable gaming environment.",
-        "lessons": "Through the development of this RPG game, a key insight emerged – the art of entertaining integration. Learning how to seamlessly incorporate sound, background music, and video elements added a layer of creativity to the coding process. The project underscored the importance of not only mastering technical skills but also elevating the user experience through engaging elements. What sets this RPG game apart is its dedication to providing users with the entertainment they expect from a game – from a custom theme song to visually captivating backgrounds and interactive sound effects. This project stands as a testament to the idea that combining coding expertise with entertaining elements can result in a game that not only challenges players but also offers a memorable and enjoyable experience.",
-        "image": "./assets/images/projects/dragon-repeller-demo.png",
-        "techStack": "HTML, CSS, JavaScript, Persistent Data",
-        "linkDeployed": "https://agworkgit.github.io/dragon-repeller-rpg/",
-        "linkRepo": "https://github.com/agworkgit/dragon-repeller-rpg"
     }
 ]

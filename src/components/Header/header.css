@@ -123,6 +123,10 @@
         font-size: var(--s-size);
     }
 
+    .nav-link:hover {
+        color: var(--body-color);
+    }
+
     /* Show Menu */
     .show-menu {
         bottom: 0;

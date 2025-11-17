@@ -55,7 +55,7 @@
     --text-color: #272727;
     --body-color: #e7e7e7 !important;
     --body-muted-color: #dddddd;
-    --contaier-color: #e7e7e7;
+    --container-color: #e7e7e7;
     --border-color: rgba(58, 58, 227, 0.2);
     --success-color: rgb(18, 134, 18);
     --success-color-hover: rgb(11, 89, 11);
@@ -68,7 +68,7 @@
     --text-color: #c1baa8;
     --body-color: #272727 !important;
     --body-muted-color: #303030;
-    --contaier-color: #272727;
+    --container-color: #272727;
     --border-color: rgba(231, 231, 231, 0.4);
     --success-color: rgb(99, 247, 99);
     --success-color-hover: rgb(172, 255, 172);
@@ -208,7 +208,7 @@ img {
     cursor: pointer;
     display: inline-block;
     background-color: var(--title-color);
-    color: var(--contaier-color);
+    color: var(--container-color);
     padding: 1.25rem 2rem;
     border-radius: 1rem;
     font-weight: var(--font-medium);

@@ -69,6 +69,40 @@
     z-index: 998;
 }
 
+/* Close button inside menu */
+.nav-menu-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--body-color);
+    border: none;
+    border-radius: 50%;
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    line-height: 1;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-menu-close i {
+    display: block;
+    font-size: var(--xxl-size);
+}
+
+.nav-menu-close:hover {
+    transform: scale(1.1);
+}
+
+.nav-menu-close:active {
+    transform: scale(0.95);
+}
+
 .nav-menu.show-menu {
     right: 0;
 }

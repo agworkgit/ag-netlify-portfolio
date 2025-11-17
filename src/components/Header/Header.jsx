@@ -37,7 +37,7 @@ const Header = () => {
 
                 {/* Hamburger */}
                 <div className='nav-toggle' onClick={handleMenuToggle}>
-                    <i className={isMenuOpen ? 'bi bi-x' : 'bi bi-list'}></i>
+                    <i className='bi bi-list'></i>
                 </div>
 
                 {/* Theme toggle */}
@@ -61,6 +61,15 @@ const Header = () => {
 
                 {/* Fullscreen Menu */}
                 <div className={`nav-menu ${isMenuOpen ? 'show-menu' : ''}`}>
+                    {/* Close button inside menu */}
+                    <button
+                        className='nav-menu-close'
+                        onClick={handleMenuClose}
+                        aria-label='Close menu'
+                    >
+                        <i className='bi bi-x'></i>
+                    </button>
+
                     <ul className='nav-list'>
                         <li className='nav-item'>
                             <Link

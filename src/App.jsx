@@ -27,19 +27,23 @@ export const App = () => {
         setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
     };
 
-    useEffect(() => {
-        localStorage.setItem('theme', theme);
-    }, [theme]);
-
     // Safari theme fix
     useEffect(() => {
-        const themeColor = document.querySelector("meta[name='theme-color']");
-        if (!themeColor) return;
+        // Save theme in localStorage
+        localStorage.setItem('theme', theme);
 
-        if (theme === 'dark') {
-            themeColor.setAttribute('content', '#272727');
-        } else {
-            themeColor.setAttribute('content', '#e7e7e7');
+        // Apply theme to <html>
+        document.documentElement.setAttribute('data-theme', theme);
+
+        // Update Safari theme-color meta
+        const themeColorMeta = document.querySelector(
+            "meta[name='theme-color']"
+        );
+        if (themeColorMeta) {
+            themeColorMeta.setAttribute(
+                'content',
+                theme === 'dark' ? '#272727' : '#e7e7e7'
+            );
         }
     }, [theme]);
 

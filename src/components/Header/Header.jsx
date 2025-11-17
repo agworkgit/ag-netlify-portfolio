@@ -14,10 +14,19 @@ const Header = () => {
     const handleMenuToggle = () => setMenuOpen((prev) => !prev);
     const handleMenuClose = () => setMenuOpen(false);
 
+    // Close menu when route changes
     useEffect(() => {
-        // Close menu if location changes
         handleMenuClose();
     }, [location]);
+
+    // Lock/unlock scroll when menu opens
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.classList.add('body-lock');
+        } else {
+            document.body.classList.remove('body-lock');
+        }
+    }, [isMenuOpen]);
 
     return (
         <header className='header'>

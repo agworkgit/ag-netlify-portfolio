@@ -1,4 +1,10 @@
 /* Header */
+.body-lock {
+    overflow: hidden;
+    height: 100dvh;
+    touch-action: none;
+}
+
 .header {
     width: 100%;
     position: sticky;
@@ -33,8 +39,8 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0;
     visibility: hidden;
@@ -52,8 +58,8 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     background-color: var(--title-color);
     display: flex;
     flex-direction: column;

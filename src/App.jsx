@@ -45,7 +45,7 @@ export const App = () => {
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
-            <div className='App' id={theme}>
+            <div className='App' data-theme={theme}>
                 <div id='safari-status-bar' />
                 <Router basename='/'>
                     <Header />

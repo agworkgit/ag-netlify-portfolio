@@ -49,7 +49,7 @@
 }
 
 /* Light Colors */
-#light {
+[data-theme='light'] {
     --title-color: #3a3ae3;
     --title-color-dark: #1212dc;
     --text-color: #272727;
@@ -62,7 +62,7 @@
 }
 
 /* Dark Colors */
-#dark {
+[data-theme='dark'] {
     --title-color: #ff7028;
     --title-color-dark: #ff8e55;
     --text-color: #c1baa8;

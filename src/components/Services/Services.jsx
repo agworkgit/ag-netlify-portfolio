@@ -4,28 +4,31 @@ import './services.css';
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
 
+    // Scroll modal back to current position
     useLayoutEffect(() => {
         const isModalOpen = toggleState !== 0;
 
         if (isModalOpen) {
+            // Lock scroll
             const scrollY = window.scrollY;
-            document.body.dataset.scrollY = scrollY;
-
+            document.body.dataset.scrollY = scrollY; // store it
             document.body.style.position = 'fixed';
             document.body.style.top = `-${scrollY}px`;
             document.body.style.left = '0';
             document.body.style.right = '0';
             document.body.style.overflow = 'hidden';
         } else {
+            // Restore scroll **before** removing fixed positioning
             const scrollY = document.body.dataset.scrollY || '0';
-
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.left = '';
             document.body.style.right = '';
             document.body.style.overflow = '';
 
+            // Reset scroll to saved position
             window.scrollTo(0, parseInt(scrollY, 10));
+
             delete document.body.dataset.scrollY;
         }
     }, [toggleState]);

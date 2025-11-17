@@ -1,7 +1,7 @@
 .testimonials {
     margin: 0 auto;
-    background-color: var(--body-color) !important;
-    padding-bottom: 2rem;
+    /* background-color: var(--body-color) !important; */
+    padding: 1rem;
     height: auto;
 }
 
@@ -45,7 +45,7 @@
 @media screen and (max-width: 992px) {
     .testimonials-container {
         width: auto;
-        padding-inline: 2rem !important;
+        /* padding-inline: 2rem !important; */
     }
 
     .testimonial-card {
@@ -67,8 +67,8 @@
 
 @media screen and (max-width: 576px) {
     .testimonials {
-        padding-inline: 1rem;
-        padding-bottom: 6rem;
+        /* padding-inline: 1rem;
+        padding-bottom: 6rem; */
     }
 
     .testimonials-container {
@@ -83,6 +83,6 @@
 
 @media screen and (max-width: 350px) {
     .testimonials {
-        padding-bottom: 6rem;
+        /* padding-bottom: 6rem; */
     }
 }

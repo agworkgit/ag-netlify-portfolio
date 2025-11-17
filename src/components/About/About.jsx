@@ -15,11 +15,13 @@ const About = () => {
             {/* Container for the About section */}
             <div className='about-container container grid'>
                 {/* Profile picture */}
-                <img
-                    src={AboutImage}
-                    alt='Profile picture of Alex'
-                    className='about-image'
-                />
+                <div className='about-img-wrapper'>
+                    <img
+                        src={AboutImage}
+                        alt='Picture of workspace'
+                        className='about-image'
+                    />
+                </div>
 
                 {/* Container for information and description */}
                 <div className='about-data'>

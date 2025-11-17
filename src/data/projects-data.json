@@ -55,7 +55,7 @@
         "purpose": "The goal of PixelPulse is to create an engaging, real-time audio visualisation experience in the browser. It allows users to explore music visually, experiment with different themes, and enjoy responsive, interactive animations without any heavy dependencies.",
         "problems": "Challenges included implementing real-time FFT analysis for accurate audio visualization, ensuring that visuals remained fully constrained within the canvas boundaries, and persisting user-selected themes across sessions. Maintaining performance while updating visuals every frame required careful optimisation of the rendering loop.",
         "lessons": "Building PixelPulse reinforced skills in real-time audio processing, canvas-based rendering, and state persistence. I learned to balance visual complexity with performance, handle user interactions smoothly, and integrate Web Audio API with p5.js for an immersive experience. It highlighted the power of lightweight, browser-based creative coding.",
-        "image": "./assets/images/projects/pixelpulse-demo.png",
+        "image": "./assets/images/projects/pixelpulse-demo.gif",
         "techStack": "JavaScript (ES6), p5.js, Web Audio API, HTML5, CSS3",
         "linkDeployed": "https://your-deployment-link.com",
         "linkRepo": "https://github.com/agworkgit/pixelpulse"

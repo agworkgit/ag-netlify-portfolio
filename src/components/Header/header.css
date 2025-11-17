@@ -84,11 +84,6 @@
     text-decoration: none;
 }
 
-/* Theme toggle inside menu */
-.switch-theme {
-    /* margin-top: 2rem; */
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
     .nav-logo {

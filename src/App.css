@@ -156,6 +156,18 @@ img {
     background-color: var(--body-color) !important;
 }
 
+/* Safari status bar fix */
+#safari-status-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: env(safe-area-inset-top); /* matches notch / status bar */
+    background-color: var(--body-color);
+    z-index: 9999;
+    pointer-events: none; /* won’t block clicks */
+}
+
 /* Reusable Classes */
 .section {
     height: auto;

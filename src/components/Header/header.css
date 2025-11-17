@@ -80,10 +80,14 @@
 /* For medium size devices */
 @media screen and (max-width: 768px) {
     .header {
-        position: -webkit-sticky;
+        position: fixed;
         top: initial;
+        left: 0;
         bottom: 0;
+        height: 60px;
         border-top: 1px solid var(--body-muted-color);
+        /* transform: translateZ(0);
+        backface-visibility: hidden; */
     }
 
     /* .container {

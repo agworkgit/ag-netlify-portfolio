@@ -267,6 +267,10 @@ img {
     .grid {
         justify-content: center;
     }
+
+    .section {
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -280,5 +284,9 @@ img {
 
     .grid {
         justify-content: center;
+    }
+
+    .section {
+        padding-top: 0;
     }
 }

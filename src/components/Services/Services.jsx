@@ -1,14 +1,32 @@
-import { useState } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import './services.css';
 
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
 
-    useEffect(() => {
-        if (toggleState !== 0) {
-            document.body.classList.add('body-lock');
+    useLayoutEffect(() => {
+        const isModalOpen = toggleState !== 0;
+
+        if (isModalOpen) {
+            const scrollY = window.scrollY;
+            document.body.dataset.scrollY = scrollY;
+
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${scrollY}px`;
+            document.body.style.left = '0';
+            document.body.style.right = '0';
+            document.body.style.overflow = 'hidden';
         } else {
-            document.body.classList.remove('body-lock');
+            const scrollY = document.body.dataset.scrollY || '0';
+
+            document.body.style.position = '';
+            document.body.style.top = '';
+            document.body.style.left = '';
+            document.body.style.right = '';
+            document.body.style.overflow = '';
+
+            window.scrollTo(0, parseInt(scrollY, 10));
+            delete document.body.dataset.scrollY;
         }
     }, [toggleState]);
 

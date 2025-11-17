@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--contaier-color);
+    background-color: var(--container-color);
     border-top: 1px solid var(--border-color);
     position: relative;
     bottom: 0;
@@ -44,7 +44,7 @@
 
 .footer-social-link {
     background-color: var(--text-color);
-    color: var(--contaier-color);
+    color: var(--container-color);
     font-size: 1.25rem;
     display: flex;
     justify-content: center;

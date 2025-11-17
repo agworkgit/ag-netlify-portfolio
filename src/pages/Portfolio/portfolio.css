@@ -4,7 +4,8 @@
 }
 
 .project-container {
-    padding-top: 6rem;
+    padding-top: 0.5rem;
+    padding-inline: 0.5rem;
     margin: 0 auto;
     grid-template-columns: repeat(1, 1fr);
     /* align-items: center; */
@@ -118,7 +119,7 @@
 @media screen and (max-width: 992px) {
     .container {
         margin-inline: 0;
-        padding-inline: 3rem;
+        /* padding-inline: 3rem; */
     }
 
     .project-container {

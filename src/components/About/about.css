@@ -2,14 +2,19 @@
     margin-left: 12px;
 }
 
+#about {
+    padding-top: 4rem;
+}
+
 .about-container {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     column-gap: 4rem;
+    height: 100%;
 }
 
 .about-image {
-    height: 100%;
+    height: auto;
     width: auto;
     border-radius: 15px;
     justify-self: center;
@@ -66,8 +71,6 @@
     }
 
     .about-image {
-        width: 100%;
-        max-height: 25vh;
         object-position: bottom;
     }
 
@@ -99,8 +102,6 @@
     }
 
     .about-image {
-        width: 100%;
-        max-height: 25vh;
         object-position: center;
         border-radius: 15px;
     }
@@ -123,8 +124,6 @@
     }
 
     .about-image {
-        width: 100%;
-        max-height: 25vh;
         object-position: bottom;
         border-radius: 15px;
     }

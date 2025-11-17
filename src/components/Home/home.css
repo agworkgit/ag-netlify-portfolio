@@ -171,6 +171,8 @@
 @media screen and (max-width: 853px) {
     .home-content {
         grid-template-rows: repeat(2, 1fr);
+        padding-top: 0rem;
+        padding-inline: 1.5rem;
     }
 }
 
@@ -184,8 +186,8 @@
         grid-template-rows: repeat(1, 1fr);
         column-gap: 0rem;
         row-gap: 5rem;
-        padding-top: 0rem;
-        padding-inline: 0.5rem;
+        padding-top: 2rem;
+        padding-inline: 1.5rem;
     }
 
     .home-data {
@@ -208,9 +210,9 @@
         height: 200px;
     }
 
-    .home-scroll {
+    /*   .home-scroll {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 375px) {
@@ -223,8 +225,8 @@
         grid-template-rows: repeat(1, 1fr);
         align-items: start;
         row-gap: 5rem;
-        padding-top: 0rem;
-        padding-inline: 0.5rem;
+        padding-top: 2rem;
+        padding-inline: 1.5rem;
     }
 
     .home-data {

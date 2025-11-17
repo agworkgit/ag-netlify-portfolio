@@ -11,21 +11,12 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    const handleMenuToggle = () => {
-        setMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
-    };
-
-    const handleMenuClose = () => {
-        setMenuOpen(false);
-    };
+    const handleMenuToggle = () => setMenuOpen((prev) => !prev);
+    const handleMenuClose = () => setMenuOpen(false);
 
     useEffect(() => {
-        if (
-            location.pathname !== '/portfolio' &&
-            location.pathname !== '/contact'
-        ) {
-            // Additional logic you want to perform when not on portfolio or contact
-        }
+        // Close menu if location changes
+        handleMenuClose();
     }, [location]);
 
     return (
@@ -35,128 +26,99 @@ const Header = () => {
                     AG
                 </Link>
 
-                <div className={isMenuOpen ? 'nav-menu show-menu' : 'nav-menu'}>
+                {/* Hamburger */}
+                <div className='nav-toggle' onClick={handleMenuToggle}>
+                    <i className={isMenuOpen ? 'bi bi-x' : 'bi bi-list'}></i>
+                </div>
+
+                {/* Theme toggle */}
+                <div className='switch-theme'>
+                    <ReactSwitch
+                        onChange={toggleTheme}
+                        checked={theme === 'dark'}
+                        onColor='#ff7028'
+                        offColor='#3a3ae3'
+                        onHandleColor='#272727'
+                        uncheckedIcon={false}
+                        checkedIcon={false}
+                    />
+                </div>
+
+                {/* Overlay */}
+                <div
+                    className={`nav-overlay ${isMenuOpen ? 'active' : ''}`}
+                    onClick={handleMenuClose}
+                ></div>
+
+                {/* Fullscreen Menu */}
+                <div className={`nav-menu ${isMenuOpen ? 'show-menu' : ''}`}>
                     <ul className='nav-list'>
                         <li className='nav-item'>
                             <Link
                                 to='/'
                                 className='nav-link'
-                                onClick={() => {
-                                    handleMenuClose();
-                                }}
+                                onClick={handleMenuClose}
                             >
-                                <i className='bi bi-house nav-icon'></i> Home
+                                Home
                             </Link>
                         </li>
-
-                        {navigate && (
-                            <>
-                                {location.pathname !== '/portfolio' &&
-                                    location.pathname !== '/contact' && (
-                                        <>
-                                            <li className='nav-item'>
-                                                <ScrollLink
-                                                    to='about'
-                                                    className='nav-link'
-                                                    smooth='true'
-                                                    duration={200}
-                                                    onClick={() => {
-                                                        handleMenuClose();
-                                                    }}
-                                                >
-                                                    <i className='bi bi-person-circle nav-icon'></i>{' '}
-                                                    About
-                                                </ScrollLink>
-                                            </li>
-
-                                            <li className='nav-item'>
-                                                <ScrollLink
-                                                    to='skills'
-                                                    className='nav-link'
-                                                    smooth='true'
-                                                    duration={200}
-                                                    onClick={() => {
-                                                        handleMenuClose();
-                                                    }}
-                                                >
-                                                    <i className='bi bi-tools nav-icon'></i>{' '}
-                                                    Skills
-                                                </ScrollLink>
-                                            </li>
-
-                                            <li className='nav-item'>
-                                                <ScrollLink
-                                                    to='services'
-                                                    className='nav-link'
-                                                    smooth='true'
-                                                    duration={200}
-                                                    onClick={() => {
-                                                        handleMenuClose();
-                                                    }}
-                                                >
-                                                    <i className='bi bi-briefcase nav-icon'></i>{' '}
-                                                    Services
-                                                </ScrollLink>
-                                            </li>
-                                        </>
-                                    )}
-                            </>
-                        )}
-
+                        {location.pathname !== '/portfolio' &&
+                            location.pathname !== '/contact' && (
+                                <>
+                                    <li className='nav-item'>
+                                        <ScrollLink
+                                            to='about'
+                                            className='nav-link'
+                                            smooth
+                                            duration={200}
+                                            onClick={handleMenuClose}
+                                        >
+                                            About
+                                        </ScrollLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <ScrollLink
+                                            to='skills'
+                                            className='nav-link'
+                                            smooth
+                                            duration={200}
+                                            onClick={handleMenuClose}
+                                        >
+                                            Skills
+                                        </ScrollLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <ScrollLink
+                                            to='services'
+                                            className='nav-link'
+                                            smooth
+                                            duration={200}
+                                            onClick={handleMenuClose}
+                                        >
+                                            Services
+                                        </ScrollLink>
+                                    </li>
+                                </>
+                            )}
                         <li className='nav-item'>
                             <Link
                                 to='/portfolio'
                                 className='nav-link'
-                                onClick={() => {
-                                    handleMenuClose();
-                                }}
+                                onClick={handleMenuClose}
                             >
-                                <i className='bi bi-file-earmark-code nav-icon'></i>{' '}
                                 Portfolio
                             </Link>
                         </li>
-
                         <li className='nav-item'>
                             <Link
                                 to='/contact'
                                 className='nav-link'
-                                onClick={() => {
-                                    handleMenuClose();
-                                }}
+                                onClick={handleMenuClose}
                             >
-                                <i className='bi bi-envelope nav-icon'></i>{' '}
                                 Contact
                             </Link>
                         </li>
                     </ul>
-
-                    {/* Close Menu Button */}
-                    {isMenuOpen && (
-                        <i
-                            className='bi bi-x nav-close'
-                            onClick={handleMenuClose}
-                        ></i>
-                    )}
-                </div>
-
-                {/* Theme Toggle */}
-                {!isMenuOpen && (
-                    <div className='switch-theme'>
-                        <ReactSwitch
-                            onChange={toggleTheme}
-                            checked={theme === 'dark'}
-                            onColor='#ff7028'
-                            offColor='#3a3ae3'
-                            onHandleColor='#272727'
-                            activeBoxShadow='0 0 2px 3px #3bf'
-                            uncheckedIcon={false}
-                            checkedIcon={false}
-                        ></ReactSwitch>
-                    </div>
-                )}
-
-                <div className='nav-toggle' onClick={handleMenuToggle}>
-                    <i className='bi bi-list'></i>
                 </div>
             </nav>
         </header>

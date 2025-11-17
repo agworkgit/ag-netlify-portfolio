@@ -52,10 +52,8 @@
 
 .services-modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0; /* replaces top/left/right/bottom */
+    -webkit-overflow-scrolling: touch;
     background-color: var(--border-color);
     z-index: var(--z-modal);
     display: flex;
@@ -65,21 +63,36 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    transform: translateZ(0);
+    will-change: opacity, visibility;
+    pointer-events: auto;
+}
+
+.services-modal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
 }
 
 .services-modal-content {
     width: 500px;
     position: relative;
     background-color: var(--container-color);
-    padding: 4.5rem 2.5rem 2.5rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-height: 90%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; /* critical */
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .services-modal-close {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
+    position: sticky;
+    z-index: 999999;
+    top: 1;
+    width: fit-content;
     color: var(--body-muted-color);
     cursor: pointer;
     background-color: var(--title-color);
@@ -174,7 +187,7 @@
     }
 
     .services-modal-content {
-        padding: 4.5rem 2rem 1.5rem;
+        padding: 1.5rem;
         max-height: 90%;
         overflow: scroll;
     }

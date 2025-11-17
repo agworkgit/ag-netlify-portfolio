@@ -80,11 +80,10 @@
 /* For medium size devices */
 @media screen and (max-width: 768px) {
     .header {
-        position: fixed;
+        position: -webkit-sticky;
         top: initial;
         bottom: 0;
         border-top: 1px solid var(--body-muted-color);
-        padding-bottom: env(safe-area-inset-bottom); /* iOS safe area */
     }
 
     /* .container {
@@ -92,8 +91,7 @@
   } */
 
     .nav {
-        height: 60px; /* fixed height to avoid Safari calc() issue */
-        /* height: calc(var(--header-height) + 0.75rem); */
+        height: calc(var(--header-height) + 0.75rem);
         display: flex;
         justify-content: space-between;
         align-items: center;

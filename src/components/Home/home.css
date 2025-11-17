@@ -222,7 +222,7 @@
 
 @media screen and (max-width: 375px) {
     .home-container {
-        height: 100vh;
+        /* height: 100vh; */
         align-items: start;
     }
 

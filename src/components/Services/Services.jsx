@@ -1,40 +1,58 @@
-import { useState, useLayoutEffect } from 'react';
+import { useState, useLayoutEffect, useRef } from 'react';
 import './services.css';
 
 const Services = () => {
     const [toggleState, setToggleState] = useState(0);
+    const scrollYRef = useRef(0);
 
     // Scroll modal back to current position
     useLayoutEffect(() => {
         const isModalOpen = toggleState !== 0;
 
         if (isModalOpen) {
-            // Lock scroll
-            const scrollY = window.scrollY;
-            document.body.dataset.scrollY = scrollY; // store it
+            // Lock scroll - store current position
+            scrollYRef.current = window.scrollY;
             document.body.style.position = 'fixed';
-            document.body.style.top = `-${scrollY}px`;
+            document.body.style.top = `-${scrollYRef.current}px`;
             document.body.style.left = '0';
             document.body.style.right = '0';
             document.body.style.overflow = 'hidden';
-        } else {
-            // Restore scroll **before** removing fixed positioning
-            const scrollY = document.body.dataset.scrollY || '0';
+            document.body.style.width = '100%';
+        }
+        // Note: scroll restoration now happens in toggleTab before state change
+    }, [toggleState]);
+
+    const toggleTab = (index) => {
+        // If closing the modal, prevent any scroll jumping
+        if (index === 0 && toggleState !== 0) {
+            const scrollY = scrollYRef.current;
+
+            // Disable smooth scrolling temporarily
+            const htmlElement = document.documentElement;
+            const originalScrollBehavior = htmlElement.style.scrollBehavior;
+            htmlElement.style.scrollBehavior = 'auto';
+
+            // Remove the fixed positioning
             document.body.style.position = '';
             document.body.style.top = '';
             document.body.style.left = '';
             document.body.style.right = '';
             document.body.style.overflow = '';
+            document.body.style.width = '';
 
-            // Reset scroll to saved position
-            window.scrollTo(0, parseInt(scrollY, 10));
+            // Immediately restore scroll position
+            window.scrollTo(0, scrollY);
 
-            delete document.body.dataset.scrollY;
+            // Restore smooth scrolling after a brief moment
+            setTimeout(() => {
+                htmlElement.style.scrollBehavior = originalScrollBehavior;
+            }, 50);
+
+            // Update state to close modal
+            setToggleState(index);
+        } else {
+            setToggleState(index);
         }
-    }, [toggleState]);
-
-    const toggleTab = (index) => {
-        setToggleState(index);
     };
 
     return (

@@ -62,7 +62,7 @@
     position: fixed;
     inset: 0; /* replaces top/left/right/bottom */
     -webkit-overflow-scrolling: touch;
-    background-color: var(--border-color);
+    background-color: var(--modal-color);
     z-index: var(--z-modal);
     display: flex;
     justify-content: center;
@@ -84,7 +84,7 @@
 }
 
 .services-modal-content {
-    width: 95%;
+    width: 640px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -93,7 +93,7 @@
     border-radius: 1rem;
     padding: 1.5rem;
     max-height: 95%;
-    overflow: scroll;
+    /* overflow: scroll; */
     -webkit-overflow-scrolling: touch; /* critical */
     transform: translateZ(0);
     will-change: transform;
@@ -178,6 +178,10 @@
         /* padding: 3.5rem 0.5rem 1.25rem 1.5rem; */
     }
 
+    .services-modal-content {
+        overflow: scroll;
+    }
+
     .services-icon {
         font-size: 1.5rem;
     }
@@ -225,6 +229,12 @@
 @media screen and (max-width: 350px) {
     .services-container {
         grid-template-columns: max-content;
+    }
+
+    .services-modal-content {
+        padding: 1.5rem;
+        max-height: 90%;
+        overflow: scroll;
     }
 
     .services-content {

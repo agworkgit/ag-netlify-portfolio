@@ -76,7 +76,7 @@
 @media screen and (max-width: 576px) {
     .skills-container {
         grid-template-columns: 1fr;
-        padding: 0.5rem !important;
+        /* padding: 0.5rem !important; */
     }
 
     .skills-content {

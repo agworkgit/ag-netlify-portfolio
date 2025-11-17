@@ -46,7 +46,15 @@
 }
 
 @media screen and (max-width: 576px) {
+    .back-to-top {
+        right: 1rem;
+        padding: 0.25rem 0.4rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
+    .back-to-top {
+        right: 1rem;
+        padding: 0.25rem 0.4rem;
+    }
 }

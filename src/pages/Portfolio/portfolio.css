@@ -1,17 +1,16 @@
-.portfolio-container {
-    background-color: var(--body-color);
-    /* padding-top: 4.75rem; */
+.portfolio {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
 }
 
 .project-container {
-    padding-top: 0.5rem;
-    padding-inline: 0.5rem;
-    margin: 0 auto;
+    /* padding-top: 0.5rem; */
+    /* padding-inline: 0.5rem; */
+    /* margin: 0 auto; */
     grid-template-columns: repeat(1, 1fr);
     /* align-items: center; */
     column-gap: 2.5rem;
-    background-color: var(--body-color) !important;
-    max-width: 968px;
+    /* max-width: 968px; */
 }
 
 .project-container:last-child {
@@ -21,10 +20,11 @@
 
 .project-card {
     background-color: var(--body-muted-color);
-    border-radius: 1.5rem;
+    /* border-radius: 1.5rem; */
     text-align: left;
-    padding-bottom: 1rem;
-    padding-inline: 1rem;
+    /* padding-bottom: 2rem; */
+    /* padding-inline: 1rem; */
+    /* border-bottom: 1px solid var(--title-color); */
 }
 
 .project-title {
@@ -72,12 +72,11 @@
 }
 
 .project-image {
-    height: 35vh;
     width: 100%;
     object-fit: cover;
     object-position: top;
     background-repeat: no-repeat;
-    border-radius: 1.25rem;
+    border-radius: 0.5rem;
     justify-self: center;
     margin-block: var(--mb-1);
 }
@@ -194,8 +193,8 @@
     }
 
     .project-container {
-        padding-top: var(--mb-0-5);
-        padding-inline: var(--mb-0-5);
+        /* padding-top: var(--mb-0-5);
+        padding-inline: var(--mb-0-5); */
         grid-template-columns: 1fr;
         /* align-items: center; */
         column-gap: 0rem;
@@ -204,7 +203,7 @@
 
     .project-container:last-child {
         /* margin-bottom: 3rem; */
-        padding-bottom: 9rem;
+        /* padding-bottom: 9rem; */
     }
 
     .project-subtitle,

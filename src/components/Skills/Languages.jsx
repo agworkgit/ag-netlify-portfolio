@@ -1,3 +1,5 @@
+import './skills.css';
+
 const Languages = () => {
     return (
         <div className='skills-content'>

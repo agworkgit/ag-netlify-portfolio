@@ -1,3 +1,5 @@
+import './skills.css';
+
 const Frontend = () => {
     return (
         <div className='skills-content'>

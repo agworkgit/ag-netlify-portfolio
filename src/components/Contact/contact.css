@@ -47,7 +47,7 @@
 .contact-card {
     background-color: var(--container-color);
     border: 1px solid var(--border-color);
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     text-align: center;
 }
@@ -110,7 +110,7 @@
     background: none;
     color: var(--text-color);
     outline: none;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     padding: 1.4rem;
     z-index: 1;
     resize: none;
@@ -125,7 +125,7 @@
     font-size: var(--xs-size);
     padding: 0.25rem;
     background-color: var(--body-muted-color);
-    border-radius: 10px;
+    border-radius: 0.5rem;
     z-index: 10;
 }
 
@@ -143,7 +143,7 @@
     background-color: var(--body-muted-color);
     margin-block: 1.5rem;
     padding: 10px;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     width: 360px;
     border: 2px solid var(--success-color);
     transition: all 0.4s ease-in-out;

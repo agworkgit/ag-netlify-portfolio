@@ -32,17 +32,17 @@
 }
 
 .social-icon-badge {
-    font-size: 1.5rem;
+    font-size: var(--xl-size);
 }
 
 .home-title {
-    font-size: var(--xl-size);
+    font-size: var(--xxl-size);
     margin-bottom: var(--mb-0-25);
 }
 
 .home-subtitle {
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: var(--l-size);
     padding-left: 5.4rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
@@ -62,6 +62,7 @@
     min-width: 400px;
     margin-bottom: var(--mb-3);
     color: var(--text-color);
+    font-size: var(--s-size);
 }
 
 .home-image {
@@ -95,6 +96,7 @@
 }
 
 .home-scroll {
+    padding-bottom: 2rem;
     margin: 0 auto;
     animation: mouse-animate 3s ease-in-out infinite;
 }

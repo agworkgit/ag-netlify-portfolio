@@ -1,3 +1,5 @@
+import './skills.css';
+
 const Backend = () => {
     return (
         <div className='skills-content'>

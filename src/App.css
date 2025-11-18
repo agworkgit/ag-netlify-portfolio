@@ -107,7 +107,6 @@
 html {
     background-color: var(--body-color) !important;
     overflow-x: hidden;
-    scroll-behavior: smooth;
     height: 100%;
 }
 
@@ -177,7 +176,7 @@ img {
     /* padding-top: 2rem; */
     background-color: var(--body-muted-color) !important;
     max-width: 1280px;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     width: 95%;
     margin-block: 1rem !important;
     border: 1px solid var(--border-color);
@@ -270,7 +269,7 @@ img {
 
 @media screen and (max-width: 576px) {
     .section-subtitle {
-        font-size: 0.75rem;
+        font-size: var(--xs-size);
         /* margin: var(--mb-0-5); */
     }
 

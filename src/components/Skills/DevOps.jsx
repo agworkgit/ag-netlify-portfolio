@@ -1,3 +1,5 @@
+import './skills.css';
+
 const DevOps = () => {
     return (
         <div className='skills-content'>

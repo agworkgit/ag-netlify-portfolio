@@ -126,6 +126,7 @@
     .project-container {
         grid-template-columns: 1fr;
         row-gap: 1rem;
+        padding-top: 0.75rem;
     }
 
     .project-deployed-button,
@@ -139,7 +140,7 @@
 
 @media screen and (max-width: 768px) {
     .project-container {
-        padding-top: 0rem;
+        padding-top: 0.5rem;
     }
 
     .project-deployed-button,

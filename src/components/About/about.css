@@ -59,6 +59,7 @@
 }
 
 .about-description {
+    font-size: var(--xs-size);
     margin-bottom: var(--mb-2-5);
     color: var(--text-color);
 }

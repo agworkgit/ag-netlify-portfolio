@@ -6,8 +6,9 @@ const Data = () => {
             <h1 className='home-title'>Hi, welcome to my portfolio!</h1>
             <h3 className='home-subtitle'>Junior Full Stack Developer</h3>
             <p className='home-description'>
-                Crafting practical, testable, real-world web applications —
-                backed by a strong analytical background and ongoing CS degree
+                Crafting Testable, Responsive Web Applications. Backed by a
+                decade of strong business/analytical acumen and solidifying
+                foundational engineering skills with ongoing part-time CS degree
                 work.
             </p>
             <Link to='/contact' className='button button-flex'>

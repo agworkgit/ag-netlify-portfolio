@@ -44,7 +44,7 @@
         "lessons": "Developing Phantom Rush reinforced my understanding of game loops, canvas rendering, collision logic, and state management in vanilla JavaScript. I learned to optimize performance for smooth gameplay, structure modular game logic, and plan future enhancements like enemy AI patterns, power-ups, and mobile support.",
         "image": "./assets/images/projects/phantom-rush-demo.gif",
         "techStack": "JavaScript (ES6), HTML5 Canvas, CSS3",
-        "linkDeployed": "https://your-deployment-link.com",
+        "linkDeployed": "https://agworkgit.github.io/phantom-rush/",
         "linkRepo": "https://github.com/agworkgit/phantom-rush"
     },
 
@@ -57,7 +57,7 @@
         "lessons": "Building PixelPulse reinforced skills in real-time audio processing, canvas-based rendering, and state persistence. I learned to balance visual complexity with performance, handle user interactions smoothly, and integrate Web Audio API with p5.js for an immersive experience. It highlighted the power of lightweight, browser-based creative coding.",
         "image": "./assets/images/projects/pixelpulse-demo.gif",
         "techStack": "JavaScript (ES6), p5.js, Web Audio API, HTML5, CSS3",
-        "linkDeployed": "https://your-deployment-link.com",
+        "linkDeployed": "https://agworkgit.github.io/pixel-pulse/",
         "linkRepo": "https://github.com/agworkgit/pixelpulse"
     },
     {
@@ -69,8 +69,8 @@
         "lessons": "The journey of recreating my portfolio underscored the delicate balance between creativity and functionality. Implementing a theme toggle wasn't just a technical feature; it addressed accessibility and user experience. The use of modals wasn't solely a design choice but a strategic move to ensure clarity and engagement. Subtle element animations weren't added for mere aesthetics; they aimed to enhance the user interface, making it more dynamic. The swiping container for testimonials wasn't a mere gimmick; it transformed static feedback into an interactive experience. The takeaway was clear – every feature, every line of code, should seamlessly blend creativity and functionality, resulting in a portfolio that not only informs about my professional journey but also genuinely resonates with its visitors in a friendly and accessible manner.",
         "image": "./assets/images/projects/personal-demo.png",
         "techStack": "React, JavaScript, NPM, CSS Grid & Flexbox, Figma, HTML, Email JS, Swiper JS",
-        "linkDeployed": "https://agworkgit.github.io/new-portfolio/",
-        "linkRepo": "https://github.com/agworkgit/new-portfolio"
+        "linkDeployed": "https://alex-grigore.netlify.app/",
+        "linkRepo": "https://github.com/agworkgit/ag-netlify-portfolio"
     },
     {
         "id": 7,
